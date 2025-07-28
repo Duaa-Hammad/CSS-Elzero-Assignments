@@ -1,2 +1,2 @@
 ## CSS Elzero Assignments
-- Pure HTML & CSS
+- Pure HTML & CSS on (https://elzero.org/category/assignments/css-assignments/)
