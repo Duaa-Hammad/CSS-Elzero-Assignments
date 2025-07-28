@@ -1,0 +1,66 @@
+:root {
+    --yellow: #FCA000;
+    --blue: #2290F6;
+    --black: #000000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* background-color: #181616; */
+}
+
+div {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 8px solid var(--blue);
+    border-bottom-color: transparent;
+    /* ------Really important thing to make the pseudo elements be in the desired place that you want-------- */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* -------Animation------- */
+    animation-name: spinning;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+div:hover {
+    animation-play-state: running;
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    border: 8px solid var(--yellow);
+    border-bottom-color: transparent;
+}
+
+div::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    border: 8px solid var(--black);
+    border-bottom-color: transparent;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}

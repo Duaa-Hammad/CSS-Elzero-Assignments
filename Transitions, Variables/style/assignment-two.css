@@ -1,0 +1,33 @@
+* {
+    font-family: sans-serif;
+}
+
+div {
+    margin: 50px auto;
+    position: relative;
+    width: 400px;
+    font-size: 20px !important;
+    background-color: #EEEEEE !important;
+    color: black !important;
+    border: none !important;
+
+    /* to hide text inside any element in css */
+    /* 1 */
+    /* color: transparent !important; */
+    /* 2 */
+    text-indent: 107%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+div::before {
+    position: absolute;
+    content: "Elzero";
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    left: 170px;
+}

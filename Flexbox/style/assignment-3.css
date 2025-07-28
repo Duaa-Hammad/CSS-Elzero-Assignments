@@ -1,0 +1,74 @@
+body {
+    font-family: sans-serif;
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #EEEEEE;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    align-content: space-between;
+
+    & div {
+        background-color: #607D8B; 
+        width: 151px;
+        height: 100px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .one {
+        order: 6;
+    }
+
+    .two {
+        order: 5;
+    }
+
+    .six {
+        order: -1;
+    }
+
+    /* .three,
+    .four {
+        align-self: flex-start;
+    }
+
+    .two,
+    .one,
+    .five {
+        align-self: flex-end;
+    } */
+    .one {
+        align-self: flex-end;
+    }
+    .six,
+    .five {
+        height: 150px;
+    }
+
+    .three,
+    .one {
+        height: 40px;
+    }
+
+    .two,
+    .four {
+        height: 150px;
+    }
+
+    .two,
+    .three,
+    .four,
+    .one {
+        width: 200px;
+    }
+}

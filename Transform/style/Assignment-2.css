@@ -1,0 +1,57 @@
+div {
+    width: 300px;
+    height: 300px;
+    /* Start Center an element using translate */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EEEEEE;
+    /* End Center an element using translate */
+
+    /* Start Center the text inside the element */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* End Center the text inside the element */
+
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 50%;
+    outline: 19px solid #eee;
+}
+
+div::before {
+    content: "";
+    background-color: transparent;
+    border: 18px solid #E91E63;
+    border-left-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+div::after {
+    content: "";
+    background-color: transparent;
+    /* 36px is the double of 18px */
+    border: 36px solid #2196F3;
+    border-right-color: white;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    /* delay duration */
+    transition: .5s .5s;
+}
+
+div:hover::before {
+    transform: rotate(1turn);
+}
+
+div:hover::after {
+    transform: rotate(1turn);
+}

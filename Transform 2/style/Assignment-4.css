@@ -1,0 +1,92 @@
+:root {
+    --front: #FA3664;
+    --back: #1692FC;
+}
+
+/* grandpa container */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    perspective: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 150px;
+}
+
+/* card container */
+div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 100px auto;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+/* -------------Card-One---------- */
+.one::before {
+    position: absolute;
+    content: "Front";
+    width: 100%;
+    height: 100%;
+    background-color: var(--front);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    backface-visibility: hidden;
+}
+
+.one:hover {
+    transform: rotateX(-180deg);
+}
+
+.one::after {
+    position: absolute;
+    content: "Back";
+    width: 100%;
+    height: 100%;
+    background-color: var(--back);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+}
+
+/* -------------Card-Two---------- */
+.two::before {
+    position: absolute;
+    content: "Front";
+    width: 100%;
+    height: 100%;
+    background-color: var(--front);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    backface-visibility: hidden;
+}
+
+.two:hover {
+    transform: rotateY(-180deg);
+}
+
+.two::after {
+    position: absolute;
+    content: "Back";
+    width: 100%;
+    height: 100%;
+    background-color: var(--back);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}

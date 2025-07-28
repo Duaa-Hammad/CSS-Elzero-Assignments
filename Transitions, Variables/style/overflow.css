@@ -1,0 +1,28 @@
+* {
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.one,
+.two,
+.three {
+    width: fit-content;
+    background-color: #A52A2A;
+    color: white;
+    padding: 16px;
+}
+
+.four {
+    background-color: #A52A2A;
+    color: white;
+    width: 400px;
+    padding: 16px;
+    height: 42px;
+}
+
+.square {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}

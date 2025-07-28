@@ -1,0 +1,16 @@
+/* :root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+} */
+
+div {
+    width: 600px;
+    /* root value | fallback value */
+    color: var(--mainColor, red);
+    border: 3px solid var(--mainColor, black);
+    padding: var(--mainPadding, 10px);
+    font-size: 20px;
+    margin: 10px auto;
+    font-family: sans-serif;
+    font-weight: 500;
+}

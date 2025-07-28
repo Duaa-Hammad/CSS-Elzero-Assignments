@@ -1,0 +1,21 @@
+div {
+    font-family: sans-serif;
+    font-weight: 540;
+    width: 300px;
+    height: 60px;
+    height: 42px;
+    background-color: #eee;
+    margin: auto;
+    margin-bottom: 17px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 19px;
+}
+
+:empty {
+    background-color: red;
+}
+
+body {
+    margin: 50px;
+}

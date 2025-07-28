@@ -1,0 +1,48 @@
+.one {
+    width: 250px;
+    height: 250px;
+    background-color: palevioletred;
+    margin: auto;
+    position: relative;
+}
+
+.one span {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 250px;
+    background-color: rgb(152, 42, 79);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* transition: 0.3s; */
+    overflow: hidden;
+}
+
+.one span button {
+    text-decoration: none;
+    background-color: rgb(237, 55, 116);
+    padding: 10px;
+    color: white;
+    border-radius: 25px;
+    display: block;
+    width: 120px;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    transition-property: all;
+    margin-top: -130px;
+    border: none;
+    transition: 0.5s;
+}
+
+.one:hover span {
+    width: 100%;
+}
+.one span button:hover {
+    background-color: rgb(164, 76, 106);
+    transform: scale(0.9);
+}

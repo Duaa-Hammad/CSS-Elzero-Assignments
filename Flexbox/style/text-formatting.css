@@ -1,0 +1,14 @@
+h1 {
+    font-family: sans-serif;
+    font-weight: 500;
+    width: fit-content;
+    margin: 140px auto;
+    font-size: 6rem;
+    /* x | y | blur | color  */
+    text-shadow: 2px 2px #ff0000, 5px 4px #2195F2, 7px 6px #9A27B0;
+}
+
+::selection {
+    background-color: #9A27B0;
+    color: white;
+}

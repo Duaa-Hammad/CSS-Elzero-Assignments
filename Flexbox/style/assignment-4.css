@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+}
+
+.parent {
+    width: 600px;
+    height: 300px;
+    background-color: #EEEEEE;
+    margin: 100px auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    padding: 10px;
+
+    & div {
+        background-color: #009688;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 20px;
+        flex-basis: 25%;
+    }
+
+    .two {
+        align-self: flex-start;
+        width: 345px;
+    }
+
+    .one,
+    .three {
+        padding: 17px;
+        align-self: flex-end;
+    }
+}

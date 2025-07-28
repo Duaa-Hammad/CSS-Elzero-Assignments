@@ -1,0 +1,55 @@
+/* grouping selectors */
+.assign-1-shape-1,
+.assign-1-shape-2,
+.assign-1-shape-3 {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.assign-1-shape-1 {
+    background-color: rgb(138, 43, 226);
+}
+
+.assign-1-shape-2 {
+    /*0.5 is the Alpha Channel*/
+    background-color: rgb(138, 43, 226, 0.5);
+}
+
+.assign-1-shape-3 {
+    background-color: rgb(138, 43, 226, 0.1);
+}
+
+hr {
+    border-style: none;
+}
+
+/* 
+    Last video no. 14
+    super important topic!
+ */
+
+/*
+ Keyboard Shortcuts:
+ ctrl+h >> Find & Replace
+ Alt and put the mouse in palaces you want to change 
+ ------------------------------------------------------------
+
+ Block >>  respects margin, padding, width, height
+           take full width if no width
+           add line break
+ Inline >> do not respect width, height
+           respects padding and margin from right and left only
+           do add line break
+            
+ Inline-Block >> Allow elements before and after
+                 respects margin, padding, width, height
+                            
+*/
+
+
+
+/*
+ Element Visibility and Use Cases V no. 12:
+ */

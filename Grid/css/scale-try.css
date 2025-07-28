@@ -1,0 +1,28 @@
+body {
+    background-color: rebeccapurple;
+}
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    justify-content: center;
+    padding: 50px;
+    gap: 40px;
+}
+
+.img {
+    overflow: hidden;
+    height: 185px;
+    border: 2px solid antiquewhite;
+}
+
+.images-container img {
+    width: 150px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+    right: -37px;
+    top: 18px;
+}
+
+.images-container:hover img {
+    transform: scale(1.3);
+}

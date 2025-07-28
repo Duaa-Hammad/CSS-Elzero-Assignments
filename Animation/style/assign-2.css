@@ -1,0 +1,78 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div {
+    border-radius: 50%;
+}
+
+.load {
+    background-color: transparent;
+    border: 4px solid #333;
+    border-bottom-color: transparent;
+    position: relative;
+    margin: 80px auto;
+    width: 50px;
+    height: 50px;
+    animation-name: spinner-loading;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+}
+
+.load:hover {
+    animation-play-state: running;
+}
+.load:hover::before {
+    animation-play-state: running;
+}
+.load:hover::after {
+    animation-play-state: running;
+}
+
+.load div {
+    position: absolute;
+}
+
+.load .one {
+    background-color: transparent;
+    border: 4px solid #FCA000;
+    border-bottom-color: transparent;
+    width: 37px;
+    height: 37px;
+    left: 2px;
+    top: 2px;
+    animation-name: spinner-loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+}
+
+.load .two {
+    background-color: transparent;
+    border: 4px solid #2290F6;
+    border-bottom-color: transparent;
+    width: 25px;
+    height: 25px;
+    top: 8px;
+    left: 8px;
+    animation-name: spinner-loading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: linear;
+}
+
+@keyframes spinner-loading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}

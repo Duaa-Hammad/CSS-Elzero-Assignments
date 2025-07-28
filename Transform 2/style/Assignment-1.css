@@ -1,0 +1,38 @@
+:root {
+    --main-color: #FF5722;
+}
+
+h1 {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: white;
+    margin: 200px auto;
+    font-size: 65px;
+    padding: 45px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transform: skew(17deg, 10deg);
+}
+
+h1::after {
+    content: "";
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    background-color: var(--main-color);
+    z-index: -1;
+    transform: skew(-17deg, -10deg);
+}

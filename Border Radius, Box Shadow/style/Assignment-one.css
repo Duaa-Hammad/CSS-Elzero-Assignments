@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+div {
+    counter-increment: div-count;
+    position: relative;
+    margin: 40px 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ddd8d8;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    /* x-axis | y-axis | blur | spread | color */
+    box-shadow: 0px 0px 0 3px black, -5px -7px 0 2px #e91e63, 8px 7px 0 0px #2196f3;
+}
+
+div::before {
+    content: counter(div-count);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    left: 39px;
+    top: -10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+div::after {
+    content: "Element";
+    position: absolute;
+    top: 43px;
+    left: 22px;
+}

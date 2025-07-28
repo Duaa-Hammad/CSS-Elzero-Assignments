@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #607D8B;
+}
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+    background-color: black;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+div::before {
+    content: "";
+    position: absolute;
+    border: 144px solid var(--main-color);
+    border-bottom: 130px solid var(--main-color);
+    border-top-color: transparent;
+    transform: rotate(315deg) translate(-5px, 84px);
+}
+
+div::after {
+    content: "Duaa";
+    position: absolute;
+    width: 123.7%;
+    color: white;
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 23px;
+    border-bottom: 6px solid black;
+    transform: rotate(-45deg) translate(-80px, 267px);
+}

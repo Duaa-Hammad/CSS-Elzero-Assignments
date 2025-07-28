@@ -1,0 +1,23 @@
+.grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+
+    margin: 70px auto;
+    font-weight: bold;
+    font-size: 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-between;
+
+    & div {
+        background-color: #E91E63;
+        color: white;
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

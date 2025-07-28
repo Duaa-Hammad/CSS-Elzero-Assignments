@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 305px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.one {
+    position: relative;
+    align-items: center;
+    background-color: #eeeeee;
+    text-align: center;
+    width: 115px;
+    height: 134px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.circle p {
+    padding-top: 39%;
+}
+
+.button-shape {
+    width: 91px;
+    height: 17px;
+    padding: 4px;
+    color: white;
+    background-color: #03a9f4;
+    font-size: 9px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.circle {
+    background-color: #dddddd;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.line-shape::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #03a9f4;
+    left: 123px;
+}
+
+.line-shape::before {
+    position: absolute;
+    content: "or";
+    /* -------------------------- */
+    /* line-height: 1.8; */
+    /* instead of line height for centering a text inside element, I can use flexbox! */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* -------------------------- */
+    z-index: 1;
+    font-size: 8px;
+    font-weight: bold;
+    color: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #03a9f4;
+    left: 116px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

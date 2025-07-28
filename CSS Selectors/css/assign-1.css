@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* --------------------1-------------------------- */
+div.main.red {
+    color: red;
+}
+
+/* --------------------2-------------------------- */
+/* element after div with class child that has class child, too! */
+div.child+.child {
+    color: red;
+}
+
+/* or */
+div.child~.child {
+    color: red;
+}
+
+/* --------------------3-------------------------- */
+
+
+/* --------------------4-------------------------- */
